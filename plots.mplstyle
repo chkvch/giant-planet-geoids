@@ -1,0 +1,51 @@
+lines.linewidth   : 2     # line width in points
+lines.markeredgewidth  : 1.0     # the line width around the marker symbol
+lines.markersize  : 6            # markersize, in points
+font.family         : sans-serif
+font.size           : 16
+font.sans-serif : Arial
+text.usetex         : False  # use latex for all text handling. The following fonts
+mathtext.fontset : custom # Should be 'dejavusans' (default),
+axes.linewidth      : 1     # edge linewidth
+axes.titlesize      : 16   # fontsize of the axes title
+axes.labelsize      : 16  # fontsize of the x any y labels
+xtick.top            : True   # draw ticks on the top side
+xtick.major.size     : 8 # 3.5      # major tick size in points
+xtick.minor.size     : 3 # 2      # minor tick size in points
+xtick.major.width    : 1 # 0.8    # major tick width in points
+xtick.minor.width    : 1 # 0.6    # minor tick width in points
+xtick.major.pad      : 8 # 3.5      # distance to major tick label in points
+xtick.minor.pad      : 8 # 3.4      # distance to the minor tick label in points
+xtick.color          : k      # color of the tick labels
+xtick.labelsize      : 16 # fontsize of the tick labels
+xtick.direction      : in    # direction: in, out, or inout
+xtick.minor.visible  : True  # visibility of minor ticks on x-axis
+
+ytick.right          : True  # draw ticks on the right side
+ytick.major.size     : 8 # 3.5      # major tick size in points
+ytick.minor.size     : 3 # 2      # minor tick size in points
+ytick.major.width    : 1.2 # 0.8    # major tick width in points
+ytick.minor.width    : 1.2 # 0.6    # minor tick width in points
+ytick.major.pad      :6 # 3.5      # distance to major tick label in points
+ytick.minor.pad      : 6 # 3.4      # distance to the minor tick label in points
+ytick.color          : k      # color of the tick labels
+ytick.labelsize      : 16 # fontsize of the tick labels
+ytick.direction      : in    # direction: in, out, or inout
+ytick.minor.visible  : True  # visibility of minor ticks on y-axis
+
+legend.frameon       : False     # if True, draw the legend on a background patch
+legend.framealpha    : 1.      # legend patch transparency
+                                 # legend background, else a rectangle
+legend.numpoints     : 3        # the number of marker points in the legend line
+legend.fontsize      : 16
+legend.borderpad     : 0.4      # border whitespace
+legend.labelspacing  : 0.0      # the vertical space between the legend entries
+legend.handletextpad : 0.4      # the space between the legend line and legend text
+
+figure.figsize   : 6, 6   # figure size in inches
+figure.dpi       : 100 # 120      # figure dots per inch
+
+savefig.dpi         : 300   # figure dots per inch or 'figure'
+savefig.facecolor   : white    # figure facecolor when saving
+savefig.bbox        : tight # 'tight' or 'standard'.
+savefig.transparent : False    # setting that controls whether figures are saved with a
