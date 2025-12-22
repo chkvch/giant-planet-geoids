@@ -17,7 +17,7 @@ If you are interested in the outputs of models presented in Mankovich et al. (20
 To run the code, clone this repository and make sure that dependencies are installed, e.g., with 
 ```conda env create -f environment.yml && conda activate geoid```. (If you don't have conda set up yet, I recommend [miniforge](https://github.com/conda-forge/miniforge).) 
 
-Then run the basic unit tests: `python test.py -v`. If all goes well, you can open the Jupyter notebook [uranus_shape.ipynb](uranus_shape.ipynb) and follow along. If you are not set up with Jupyter, the main program in `geoid.py` also contains a minimal run of a Uranus shape model that may be adapted to your needs.
+Then run the basic unit tests: `python test.py -v`. If all goes well, you can open the Jupyter notebook [`uranus_shape.ipynb`](uranus_shape.ipynb) and follow along. If you are not set up with Jupyter, the main program in `geoid.py` also contains a minimal run of a Uranus shape model that may be adapted to your needs.
 
 Notebooks rely on `matplotlib` as an additional dependency, and optionally `dill` to facilitate the saving of `geoid.geoid` objects.
 
