@@ -12,8 +12,8 @@ c2 = Legendre.basis(2).convert(kind=Polynomial).coef
 c4 = Legendre.basis(4).convert(kind=Polynomial).coef
 c6 = Legendre.basis(6).convert(kind=Polynomial).coef
 c2p = Legendre.basis(2).convert(kind=Polynomial).deriv().coef
-c4p = Legendre.basis(2).convert(kind=Polynomial).deriv().coef
-c6p = Legendre.basis(2).convert(kind=Polynomial).deriv().coef
+c4p = Legendre.basis(4).convert(kind=Polynomial).deriv().coef
+c6p = Legendre.basis(6).convert(kind=Polynomial).deriv().coef
 
 @jit()
 def p2(x):
@@ -122,7 +122,7 @@ class geoid:
             def dr_dphi(phi, r):
                 return r * gphi_(r, np.sin(phi), j2, j4, j6, r_ref, gm, omega) / gr_(r, np.sin(phi), j2, j4, j6, r_ref, gm, omega)
             self.omega = omega * np.ones_like(self.phi)
-        else: # fun rotation
+        else:
             def dr_dphi(phi, r):
                 return r * gphi_(r, np.sin(phi), j2, j4, j6, r_ref, gm, omega(phi)) / gr_(r, np.sin(phi), j2, j4, j6, r_ref, gm, omega(phi))
             self.omega = omega(self.phi)
@@ -140,6 +140,7 @@ class geoid_barotropic:
         '''
         experiment: same as geoid.geoid, but callable omega is a function not of latitude but distance from rotation axis.
         affects best fitting polar radius for saturn by less than 0.1 km. increases equatorial radius by 0.2 km. increases rms error by 0.2 km.
+        note that a rotation profile like this is only implemented in wind_profiles for Saturn, not U, N, or J.
         '''
 
         self.mu = np.linspace(-1, 1, npts - 20) # take out 20 points to be distributed close to the poles
@@ -154,7 +155,7 @@ class geoid_barotropic:
             def dr_dphi(phi, r):
                 return r * gphi_(r, np.sin(phi), j2, j4, j6, r_ref, gm, omega) / gr_(r, np.sin(phi), j2, j4, j6, r_ref, gm, omega)
             self.omega = omega * np.ones_like(self.phi)
-        else: # fun rotation
+        else:
             def dr_dphi(phi, r):
                 this_omega = omega( r * np.cos(phi) )
                 return r * gphi_(r, np.sin(phi), j2, j4, j6, r_ref, gm, this_omega) / gr_(r, np.sin(phi), j2, j4, j6, r_ref, gm, this_omega)
