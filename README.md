@@ -15,11 +15,9 @@ This version was implemented to study the shapes of Uranus and Neptune with up-t
 If you are interested in the outputs of models presented in Mankovich et al. (2026, PSJ submitted; doi tbd), these are available in the in the `models/` subdirectory. 
 
 To run the code, clone this repository and make sure that dependencies are installed, e.g., with 
-```conda env create -f environment.yml && conda activate geoid```. (If you don't have conda set up yet, I recommend [miniforge](https://github.com/conda-forge/miniforge).) 
+```conda env create -f environment.yaml && conda activate geoid```. (If you don't have conda or python set up yet, try [miniforge](https://github.com/conda-forge/miniforge).) 
 
-Then run the basic unit tests: `python test.py -v`. If all goes well, you can open the Jupyter notebook [`uranus_shape.ipynb`](uranus_shape.ipynb) and follow along. If you are not set up with Jupyter, the main program in `geoid.py` also contains a minimal run of a Uranus shape model that may be adapted to your needs.
-
-Notebooks rely on `matplotlib` as an additional dependency, and optionally `dill` to facilitate the saving of `geoid.geoid` objects.
+Then run the basic unit tests: `python test.py -v`. If all goes well, you can open the Jupyter notebook [`uranus_shape.ipynb`](uranus_shape.ipynb) to reproduce results from our paper. If you are not set up with Jupyter, the main program in `geoid.py` also contains a minimal run of a Uranus shape model that may be adapted to your needs.
 
 ## Wind data
 The wind profiles adopted for Uranus, Neptune, Jupiter, and Saturn are given in [`data/`](data/) and associated routines in [`wind_profiles.py`](wind_profiles.py). The original profiles are sourced from the following publications:
