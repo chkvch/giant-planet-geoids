@@ -1,10 +1,2 @@
 .DS_Store
 __pycache__/
-
-models/statistical_samples/uranus_vary_wind
-models/statistical_samples/uranus_vary_rocc
-models/statistical_samples/uranus_vary_jn
-models/statistical_samples/neptune_vary_wind
-models/statistical_samples/neptune_vary_rocc
-models/statistical_samples/neptune_vary_jn
-models/geoid_objects

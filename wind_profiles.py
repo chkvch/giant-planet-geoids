@@ -40,11 +40,11 @@ def saturn_omega_tot_interpolant_by_cylindrical_radius(option='garciamelendo2011
 
 def uranus_omega_tot(phi, option='symmetric', randomize=False):
     ''' 
-    if option == 'symmetric', use even polynomial fit from Sromovsky+2015 Equations 2-4. 
+    if option == 'symmetric', use even polynomial fit from Sromovsky et al. 2015, https://doi.org/10.1016/j.icarus.2015.05.029, Equations 2-4. 
     if option == 'composite',  use asymmetric composite fit described in Section 4.5 and Table 6.
     '''
 
-    # their reference ellipsoid
+    # reference ellipsoid defined in S15's Equation 4
     rp = 24973e5
     re = 25559e5
     beta = rp / re
@@ -58,7 +58,7 @@ def uranus_omega_tot(phi, option='symmetric', randomize=False):
         dphidt_table = - np.genfromtxt('data/sromovsky2015_table_6.txt') # minus sign gives eastward drift to be consistent with dphidt from Eq. 2 used for the other wind profiles
         isort = np.argsort(theta_table)
         dphidt = interp1d(theta_table[isort], dphidt_table[isort], bounds_error=None, fill_value='extrapolate')(theta * 180 / np.pi)
-    elif option =='symmetric': 
+    elif option =='symmetric': # Equation 2 and Table 7
         from scipy.special import legendre as Pn
         n = np.array([0, 2, 4, 6, 8, 10, 12, 14, 16, 18])
         c = np.array([-1.245225, -3.582487, -0.118185, 0.848593, 0.315199, -0.188857, -0.263077, -0.026728, 0.104192, 0.059944])
@@ -76,7 +76,8 @@ def uranus_omega_tot(phi, option='symmetric', randomize=False):
     else:
         raise ValueError(f'wind option {option} not recognized')
 
-    Omega_tot = -dphidt * np.pi / 180. / 3600 + np.pi * 2 / (17.24 * 3600) # add SIII rotation to arrive at total angular velocity
+    # per S15 Section 4.1, dphi/dt is the *eastward* longitudinal drift rate; for Uranus's *westward* rotation in the IAU convention, dphi/dt and bulk spin (SIII) have opposite signs.
+    Omega_tot = dphidt * np.pi / 180. / 3600 - np.pi * 2 / (17.24 * 3600) # add SIII rotation to arrive at total angular velocity
     return Omega_tot
 
 def neptune_wind_profile_tollefson2018(phi, option='voyager', pole_attenuation='cosine', randomize=False):
