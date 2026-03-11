@@ -1,0 +1,2 @@
+# Description
+This directory contains model output in plaintext format.  Taking Uranus as an example, the primary shape models are given in [uranus_model_symmetric_wind.txt] and [uranus_model_composite_wind.txt]. Reference geoid shapes corresponding to the symmetric wind model are given in [uranus_model_symmetric_wind_reference_geoid_17.25h.txt] and similarly named files for a handful of reference rotation periods.
