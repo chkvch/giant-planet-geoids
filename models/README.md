@@ -11,4 +11,4 @@ Similar output is here for Neptune, Saturn, and Jupiter.
 - The subdirectories contain a small number of full shape models randomly selected from their corresponding statistical samples.
 - [uncertainties_summary.txt](statistical_samples/uncertainties_summary.txt) tabulates the standard deviations of the polar and equatorial radii obtained from each sample, as plotted in Figure 6 of the paper.
 
-All files contain headers with more detailed descriptions.
+See each file's header for a more detailed description.
