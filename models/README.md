@@ -1,5 +1,5 @@
 # Description
-This directory contains model output in plaintext format. 
+This directory contains shape model output in plaintext format. 
 
 For example, the primary Uranus shape model plotted in Figure 2a,b of the paper are given in [uranus_model_symmetric_wind.txt](uranus_model_symmetric_wind.txt). The rigidly rotating reference geoids corresponding to this model are given in [uranus_model_symmetric_wind_reference_geoid_17.25h.txt](uranus_model_symmetric_wind_reference_geoid_17.25h.txt) and similarly named files with different suffixes labeling different presumed rotation periods. 
 
