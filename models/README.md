@@ -10,3 +10,5 @@ Similar output is here for Neptune, Saturn, and Jupiter.
 - `uranus_vary_wind_chain.txt.gz` contains many columns and was compressed to reduce its footprint; it can be expanded with `gunzip uranus_vary_wind_chain.txt.gz` before reading.
 - The subdirectories contain a small number of full shape models randomly selected from their corresponding statistical samples.
 - [uncertainties_summary.txt](statistical_samples/uncertainties_summary.txt) tabulates the standard deviations of the polar and equatorial radii obtained from each sample, as plotted in Figure 6 of the paper.
+
+All files contain headers with more detailed descriptions.
