@@ -8,6 +8,7 @@ The method is based on integrating a tangent to the local vertical, which is mod
 - Lindal (1992, AJ); [The Atmosphere of Neptune: an Analysis of Radio Occultation Data Acquired with Voyager 2](https://scixplorer.org/abs/1992AJ....103..967L/abstract)
 - Buccino, Helled, Parisi, Hubbard, and Folkner (2020, JGR: Planets); [Updated Equipotential Shapes of Jupiter and Saturn Using Juno and Cassini Grand Finale Gravity Science Measurements](https://scixplorer.org/abs/2020JGRE..12506354B/abstract)
 - Galanti, Kaspi, and Guillot (2023, GRL); [The Shape of Jupiter and Saturn Based on Atmospheric Dynamics, Radio Occultations and Gravity Measurements](https://scixplorer.org/abs/2023GeoRL..5002321G/abstract)
+- Galanti, Smirnova, Ziv, et al. (2026, NatAstr); [The size and shape of Jupiter](https://doi.org/10.1038/s41550-026-02777-x)
 
 This version was implemented to study the shapes of Uranus and Neptune using updated measurements of their atmospheric rotation profiles and gravity fields. 
 
