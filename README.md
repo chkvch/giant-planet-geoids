@@ -1,4 +1,4 @@
-# fluid-planet-geoids
+# giant-planet-geoids
 A model for calculating shapes of constant-pressure surfaces in differentially rotating giant planet atmospheres.
 
 <img src="/figures/uranus_optimize_rpol.png" width="500" />
