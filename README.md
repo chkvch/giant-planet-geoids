@@ -14,7 +14,7 @@ This version was implemented to study the shapes of Uranus and Neptune using upd
 
 ## Quickstart
 To run the code, clone this repository and make sure that dependencies are installed, e.g., with 
-```conda env create -f environment.yaml && conda activate geoid```. (If you don't have conda or python set up yet, try [miniforge](https://github.com/conda-forge/miniforge).) 
+```conda create --name geoid --file environment.yaml && conda activate geoid```. (If you don't have conda or python set up yet, try [miniforge](https://github.com/conda-forge/miniforge).) 
 
 Then run the basic unit tests: `python test.py -v`. If all goes well, you can open the Jupyter notebook [`uranus_shape.ipynb`](uranus_shape.ipynb) to reproduce results from our paper, or just look at the main program in `geoid.py` to see a minimal run of a Uranus shape model that may be adapted to your needs.
 
