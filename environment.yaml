@@ -116,5 +116,5 @@ dependencies:
       - requests==2.32.5
       - scooby==0.11.0
       - urllib3==2.6.3
-      - vtk==9.6.0rc3
+      - vtk>=9.6.0rc3
 prefix: /Users/cmankovi/miniforge3/envs/geoid
