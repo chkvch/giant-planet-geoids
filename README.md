@@ -3,7 +3,7 @@ A model for calculating shapes of constant-pressure surfaces in differentially r
 
 <img src="/figures/uranus_optimize_rpol.png" width="500" />
 
-The method is based on integrating a tangent to the local horizontal, which is modified by latitude-dependent rotation and the planet's multipolar gravity field. This type of calculation has long been applied to analyses of radio occultation experiments by spacecraft, e.g.,
+The method is based on integrating a tangent to the local horizontal, which is modified by latitude-dependent rotation and the planet's multipolar gravity field. This type of calculation has long been applied to analyses of radio occultation experiments by spacecraft, including but not limited to
 - Lindal, Sweetnam, and Eshleman (1985, AJ); [The atmosphere of Saturn - an analysis of the Voyager radio occultation measurements](https://scixplorer.org/abs/1985AJ.....90.1136L/abstract)
 - Lindal (1992, AJ); [The Atmosphere of Neptune: an Analysis of Radio Occultation Data Acquired with Voyager 2](https://scixplorer.org/abs/1992AJ....103..967L/abstract)
 - Buccino, Helled, Parisi, Hubbard, and Folkner (2020, JGR: Planets); [Updated Equipotential Shapes of Jupiter and Saturn Using Juno and Cassini Grand Finale Gravity Science Measurements](https://scixplorer.org/abs/2020JGRE..12506354B/abstract)
