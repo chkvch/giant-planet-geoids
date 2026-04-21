@@ -18,7 +18,7 @@ To run the code, clone this repository and make sure that dependencies are insta
 
 Then run the basic unit tests: `python test.py -v`. If all goes well, you can open the Jupyter notebook [`uranus_shape.ipynb`](uranus_shape.ipynb) to reproduce results from our paper, or just look at the main program in `geoid.py` to see a minimal run of a Uranus shape model that may be adapted to your needs.
 
-If you are interested in the outputs of models presented in Mankovich et al. (2026, PSJ in review; DOI TBD), these are available in the in the `models/` subdirectory. 
+If you are interested in the outputs of models presented in Mankovich et al. (2026, PSJ; [doi:10.3847/PSJ/ae6251](https://doi.org/10.3847/PSJ/ae6251)), these are available in the in the `models/` subdirectory. 
 
 ## Wind data
 The wind profiles adopted for Uranus, Neptune, Jupiter, and Saturn are given in [`data/`](data/) and associated routines in [`wind_profiles.py`](wind_profiles.py). The original profiles are sourced from the following publications:
@@ -29,7 +29,7 @@ The wind profiles adopted for Uranus, Neptune, Jupiter, and Saturn are given in 
 - García-Melendo, Pérez-Hoyos, Sánchez-Lavega, and Hueso (2011, Icarus 215); [Saturn's zonal wind profile in 2004-2009 from Cassini ISS images and its long-term variability](https://scixplorer.org/abs/2011Icar..215...62G/abstract)
 
 ## Attribution
-If this code was useful to you, please cite Mankovich et al. (2026, PSJ in review; DOI TBD). 
+If this code was useful to you, please cite Mankovich et al. (2026, PSJ; [doi:10.3847/PSJ/ae6251](https://doi.org/10.3847/PSJ/ae6251)). 
 
 ## License
 This code is licensed under [Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0).
